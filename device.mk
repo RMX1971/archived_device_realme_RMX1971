@@ -24,6 +24,13 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# Fingerprint
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.realme
+
 # Kernel
 LOCAL_KERNEL := $(LOCAL_PATH)/boot/Image.gz-dtb
 
