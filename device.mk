@@ -19,6 +19,13 @@ PRODUCT_TARGET_VNDK_VERSION := 29
 # Declare updatable APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Fingerprint
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.realme
+
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
