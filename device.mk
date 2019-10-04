@@ -29,7 +29,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.realme
+    android.hardware.biometrics.fingerprint@2.1-service.realme \
+    vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Kernel
 LOCAL_KERNEL := $(LOCAL_PATH)/boot/Image.gz-dtb
