@@ -14,16 +14,6 @@
 # limitations under the License.
 #
 
-# Declare updatable APEX
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+LOCAL_PATH := $(call my-dir)
 
-# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
-# Light HAL
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.realme
-
-# Soong namespace
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+include $(call all-makefiles-under,$(LOCAL_PATH))
