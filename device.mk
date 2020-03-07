@@ -30,6 +30,10 @@ LOCAL_KERNEL := $(LOCAL_PATH)/boot/Image.gz-dtb
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.realme
+
 # Rootdir
 PRODUCT_PACKAGES += fstab.qcom
 
