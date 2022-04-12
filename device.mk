@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Top-level variables
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
@@ -22,6 +25,9 @@ LOCAL_KERNEL := $(LOCAL_PATH)/boot/Image.gz-dtb
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
+
+# Rootdir
+PRODUCT_PACKAGES += fstab.qcom
 
 # Soong namespace
 PRODUCT_SOONG_NAMESPACES += \
