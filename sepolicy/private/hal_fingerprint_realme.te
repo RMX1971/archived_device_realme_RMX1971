@@ -1,0 +1,3 @@
+# Fingerprint
+type hal_fingerprint_realme, domain, coredomain;
+type hal_fingerprint_realme_exec, exec_type, system_file_type;
