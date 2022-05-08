@@ -41,3 +41,9 @@ PRODUCT_MANUFACTURER := realme
 
 # Set Android client-id
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+# Override build info for certifications
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="RMX1971-user 10 QKQ1.190918.001 1621845351 release-keys"
+
+BUILD_FINGERPRINT := realme/RMX1971/RMX1971:10/QKQ1.190918.001/1621845351:user/release-keys
