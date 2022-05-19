@@ -1,0 +1,17 @@
+# Generate dex pre-opt in system image
+ro.cp_system_other_odex=0
+
+# Disable adb authentication
+ro.adb.secure=0
+
+# Disable non-AOSP nnapi extensions on product partition
+ro.nnapi.extensions.deny_on_product=true
+
+# TODO(b/120679683): Disable RescueParty before all problem apps solved
+persist.sys.disable_rescue=true
+
+# TODO(b/78105955): Disable privapp_permissions checking before the bug solved
+ro.control_privapp_permissions=disable
+
+# TODO(b/136212765): The default for LMK
+ro.lmk.kill_timeout_ms=100
