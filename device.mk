@@ -38,6 +38,43 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.oppo.face.sh \
+    init.oppo.face_calib.sh \
+    init.oppo.fingerprints.sh \
+    init.oppo.wifi.sh \
+    init.oppo.wifiAutoRecovery.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.crashdata.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.chg_policy.sh \
+    init.qti.fm.sh \
+    init.qti.ims.sh \
+    qca6234-service.sh
+
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.msm.usb.configfs.rc \
+    init.oppo.debug.diag.rc \
+    init.oppo.reserve.rc \
+    init.oppo.sensor.rc \
+    init.oppo.vendor.motor.rc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.target.rc
+
 # Soong namespace
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
