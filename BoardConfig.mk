@@ -106,6 +106,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/configs/fstab.recovery
