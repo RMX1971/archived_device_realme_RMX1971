@@ -63,6 +63,8 @@ TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(LOCAL_PATH)/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(LOCAL_PATH)/compatibility_matrix.xml
 
 # Hardware
 BOARD_USES_QCOM_HARDWARE := true
