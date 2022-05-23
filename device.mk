@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_TARGET_VNDK_VERSION := 29
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)

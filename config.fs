@@ -67,12 +67,6 @@ user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE
 
-[system/product/vendor_overlay/*/bin/*]
-mode: 0755
-user: AID_ROOT
-group: AID_SHELL
-caps: 0
-
 [system/vendor/bin/cnd]
 mode: 0755
 user: AID_SYSTEM

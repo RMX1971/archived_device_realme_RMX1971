@@ -3,6 +3,7 @@ cc_binary {
     defaults: ["hidl_defaults"],
     init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.realme.rc"],
     relative_install_path: "hw",
+    vendor: true,
     srcs: [
         "BiometricsFingerprint.cpp",
         "service.cpp",
