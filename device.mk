@@ -339,3 +339,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Inherit the proprietary version
+$(call inherit-product, vendor/realme/RMX1971/RMX1971-vendor.mk)
